@@ -1,16 +1,22 @@
+import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 
-const ItemListContainer = ({ productos, titulo }) => {
-  //estado
+const ItemListContainer = ({ title }) => {
+  const [ products, setProducts ] = useState([]);
 
-  //llamada a una api
+  useEffect(() => {
+    fetch('/data/products.json')
+      .then(res=>res.json())
+      .then(data=> setProducts(data))
+      .catch(err => console.log(err))
+  },[]);
 
   return (
-    <section>
-      <h2>{titulo}</h2>
-      <p>Bienvenidos a nuestra tienda online</p>
+    <section className="item-list-container">
+      <h2>{title}</h2>
+      <p>Conoce los ultimos lanzamientos de la temporada!</p>
 
-      <ItemList lista={productos} />
+      <ItemList lista={products} />
     </section>
   );
 };
