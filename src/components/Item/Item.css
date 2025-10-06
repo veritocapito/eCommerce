@@ -27,15 +27,14 @@
   text-decoration: none;
   color: inherit;
   display: block;
-  /*hacemos que el link tome todo el bloque del article y sea clickeable*/
 }
 
 .product-item p {
     font-size: 0.9em;
     margin: 10px 15px;
     line-height: 1.3em;
-    height: 3.9em; /* Altura fija para 3 líneas de texto (1.3 * 3 = 3.9) */
-    overflow: hidden; /* Oculta el texto que excede las 3 líneas */
+    height: 3.9em; 
+    overflow: hidden; 
     display: block;
 }
 
