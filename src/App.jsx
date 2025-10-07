@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -19,7 +18,6 @@ function App() {
           <Route path="/detail/:id" element={<ItemDetailContainer />} />
         </Routes>
         <Footer />
-        <SpeedInsights />
       </BrowserRouter>
     </>
   );
