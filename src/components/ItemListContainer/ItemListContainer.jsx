@@ -13,8 +13,8 @@ const ItemListContainer = ({ title }) => {
 
   return (
     <section className="item-list-container">
-      <h2>{title}</h2>
-      <p>Conoce los ultimos lanzamientos de la temporada!</p>
+      <h1>{title}</h1>
+      <h3>Descubre nuestra colección exclusiva para niños y niñas</h3>
 
       <ItemList lista={products} />
     </section>

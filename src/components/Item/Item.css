@@ -1,6 +1,5 @@
 .product-item {
-  background-color: #1e1e1e;
-  /* Gris más claro que el fondo */
+  background-color: #383737;
   border: 1px solid #333;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -30,12 +29,12 @@
 }
 
 .product-item p {
-    font-size: 0.9em;
-    margin: 10px 15px;
-    line-height: 1.3em;
-    height: 3.9em; 
-    overflow: hidden; 
-    display: block;
+  font-size: 0.9em;
+  margin: 10px 15px;
+  line-height: 1.3em;
+  height: 3.9em; 
+  overflow: hidden; 
+  display: block;
 }
 
 .product-title {

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-        <p>2025 eCommerce - @VeroDev</p>
+        <p>2025 eCommerce - @VeroCapo_Dev</p>
     </footer>
   )
 }
