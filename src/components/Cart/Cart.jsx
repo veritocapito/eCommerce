@@ -1,4 +1,4 @@
-import './Cart.css'
+import './cart.css'
 import {useCartContext} from '../../context/useCartContext'
 
 const Cart = () => {

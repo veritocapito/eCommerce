@@ -22,7 +22,7 @@ cd eCommerce
 npm install
 
 # Iniciar servidor
-npm run dev
+npm start
 ```
 
 ## 📁 Estructura
