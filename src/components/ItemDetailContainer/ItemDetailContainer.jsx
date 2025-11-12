@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { getProductById } from "../../services/productService";
 
 
 const ItemDetailContainer = () => {
@@ -9,18 +10,14 @@ const ItemDetailContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const product = data.find(item => item.id === id);
-        product ? setDetail(product) : Promise.reject(new Error("Product not found"));
-      })
-      .catch((err) => console.log(err));
+    getProductById(id)
+      .then(data => setDetail(data))
+      .catch(err => console.log(err));
   }, [id]);
 
   return (
-    <main>{Object.keys(detail).length ?
-      (<ItemDetail detail={detail} />) : (<p>Cargando...</p>)
+    <main className="detail-container">{Object.keys(detail).length ?
+      (<ItemDetail detail={detail} />) : (<p>Producto no encontrado.</p>)
     }</main>
   );
 };

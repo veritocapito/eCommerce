@@ -13,8 +13,7 @@ const Nav = () => {
         <li><Link to="/category/arrivals">Novedades</Link></li>
         <li><Link to="/category/products">Productos</Link></li>
         <li><Link to="/contact">Contacto</Link></li>
-        <li><Link to="/cart">Carrito 
-        {getTotalItems() && <span className="in-cart">  {getTotalItems()}</span>}
+        <li><Link to="/cart">Carrito  {getTotalItems() && <span className="in-cart">  {getTotalItems()}</span>}
         </Link></li>
       </ul>
     </nav>

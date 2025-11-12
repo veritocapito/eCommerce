@@ -1,0 +1,12 @@
+.item-list-container {
+  padding: 20px;
+
+}
+
+li {
+  list-style: none;
+}
+
+.cart-item>button {
+    margin: 15px;
+}
